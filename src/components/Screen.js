@@ -1,22 +1,22 @@
 import React from "react";
 
-class Screen extends React.Component {
-  render() {
-    return (
-      <div
-        className="ui fluid input screen"
-        style={{ paddingBottom: "20px", direction: "RTL" }}
-      >
-        <input
-          type="text"
-          placeholder="screen"
-          style={{
-            textAlign: "right"
-          }}
-        />
-      </div>
-    );
-  }
-}
+const Screen = ({ value }) => {
+  return (
+    <div
+      className="ui fluid input screen"
+      style={{ paddingBottom: "20px", direction: "RTL" }}
+    >
+      <input
+        type="text"
+        placeholder="0"
+        style={{
+          textAlign: "right"
+        }}
+        value={value}
+        readOnly
+      />
+    </div>
+  );
+};
 
 export default Screen;
