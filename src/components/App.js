@@ -22,7 +22,7 @@ class App extends React.Component {
     });
   };
 
-  percentify = buttonName => {
+  percentify = () => {
     const pctValue = Number(this.state.screenValue) * 0.01;
     this.setState({ screenValue: pctValue });
   };
